@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,b as e,d}from"./app.6c79acf1.js";const o={},r=e("h2",{id:"vm-update",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vm-update","aria-hidden":"true"},"#"),d(" vm._update()")],-1),s=[r];function _(n,i){return a(),c("div",null,s)}const h=t(o,[["render",_],["__file","update.html.vue"]]);export{h as default};
