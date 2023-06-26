@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1a45e35f","path":"/blogs/vue2/firstRender.html","title":"firstRender","lang":"en-US","frontmatter":{"title":"firstRender","date":"2022/12/16","tags":["firstRender"],"categories":["vue2"]},"excerpt":"","headers":[],"git":{},"filePathRelative":"blogs/vue2/firstRender.md"}');export{e as data};

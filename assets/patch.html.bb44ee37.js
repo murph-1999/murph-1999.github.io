@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1b42edbd","path":"/blogs/vue2/patch.html","title":"patch","lang":"en-US","frontmatter":{"title":"patch","date":"2023/05/28","tags":["patch"],"categories":["vue2"]},"excerpt":"","headers":[],"git":{},"filePathRelative":"blogs/vue2/patch.md"}');export{t as data};

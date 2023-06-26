@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cb9c3e12","path":"/tags/reactive/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cea29c7a","path":"/blogs/vue2/merge-option.html","title":"merge-option","lang":"en-US","frontmatter":{"title":"merge-option","date":"2023/06/21","tags":["merge-option"],"categories":["vue2"]},"excerpt":"","headers":[],"git":{},"filePathRelative":"blogs/vue2/merge-option.md"}');export{e as data};

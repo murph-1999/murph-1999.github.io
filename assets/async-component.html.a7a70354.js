@@ -1,0 +1,1 @@
+import{_ as e,o as n,c as o,b as t}from"./app.177f780e.js";const c={},s=t("p",null,"TODO...",-1),_=[s];function a(r,l){return n(),o("div",null,_)}const d=e(c,[["render",a],["__file","async-component.html.vue"]]);export{d as default};

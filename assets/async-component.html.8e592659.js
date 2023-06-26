@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d3592ce","path":"/blogs/vue2/async-component.html","title":"async-component","lang":"en-US","frontmatter":{"title":"async-component","date":"2023/05/22","tags":["async-component"],"categories":["vue2"]},"excerpt":"","headers":[],"git":{},"filePathRelative":"blogs/vue2/async-component.md"}');export{e as data};
