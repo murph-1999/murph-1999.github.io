@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-07ea0b40","path":"/tags/lifecycle/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};

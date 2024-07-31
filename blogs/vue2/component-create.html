@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.51">
+    <script>
+      (function() {
+        const userMode = localStorage.getItem('vuepress-reco-color-scheme') || 'auto';
+        const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (userMode === 'dark' || (userMode === 'auto' && systemDarkMode)) {
+          document.documentElement.classList.toggle('dark', true);
+        }
+      })();
+    </script>
+    <title>component-create | Murphy's Blog</title><meta name="description" content="Just playing around">
+    <link rel="modulepreload" href="/assets/app.fbeace38.js"><link rel="modulepreload" href="/assets/component-create.html.af951783.js"><link rel="modulepreload" href="/assets/component-create.html.086b06aa.js"><link rel="prefetch" href="/assets/index.html.dd053b9d.js"><link rel="prefetch" href="/assets/01-start.html.4f8471df.js"><link rel="prefetch" href="/assets/02-注册路由.html.1daf068b.js"><link rel="prefetch" href="/assets/04-mini-router.html.138bd2f2.js"><link rel="prefetch" href="/assets/05-problem.html.78ae635c.js"><link rel="prefetch" href="/assets/array-reactive.html.1493949b.js"><link rel="prefetch" href="/assets/async-component.html.a7b1c9d3.js"><link rel="prefetch" href="/assets/component-register.html.2fadf5a5.js"><link rel="prefetch" href="/assets/extend-v-model.html.7847c516.js"><link rel="prefetch" href="/assets/firstRender.html.4116f727.js"><link rel="prefetch" href="/assets/init.html.c4c832d0.js"><link rel="prefetch" href="/assets/keep-alive.html.09e0e6da.js"><link rel="prefetch" href="/assets/lifecycle.html.c810a5c9.js"><link rel="prefetch" href="/assets/merge-option.html.9a52a406.js"><link rel="prefetch" href="/assets/mount.html.47274ee4.js"><link rel="prefetch" href="/assets/nexttick.html.e45d755e.js"><link rel="prefetch" href="/assets/patch.html.bb44ee37.js"><link rel="prefetch" href="/assets/reactive.html.cf1693e0.js"><link rel="prefetch" href="/assets/render.html.4e5255d0.js"><link rel="prefetch" href="/assets/start.html.78838ccf.js"><link rel="prefetch" href="/assets/update.html.c834e223.js"><link rel="prefetch" href="/assets/virtualDom.html.1f695e46.js"><link rel="prefetch" href="/assets/watcher.html.7ef405d8.js"><link rel="prefetch" href="/assets/start.html.2f9466b7.js"><link rel="prefetch" href="/assets/api.html.129f101e.js"><link rel="prefetch" href="/assets/home.html.003faba0.js"><link rel="prefetch" href="/assets/plugin.html.ef0e2a60.js"><link rel="prefetch" href="/assets/theme.html.b9cd7c4e.js"><link rel="prefetch" href="/assets/404.html.98e87f94.js"><link rel="prefetch" href="/assets/index.html.72ac4063.js"><link rel="prefetch" href="/assets/index.html.89c1e166.js"><link rel="prefetch" href="/assets/index.html.d8caeb7d.js"><link rel="prefetch" href="/assets/index.html.7d0608ba.js"><link rel="prefetch" href="/assets/index.html.3b4c44fb.js"><link rel="prefetch" href="/assets/index.html.563ea814.js"><link rel="prefetch" href="/assets/index.html.3ab16400.js"><link rel="prefetch" href="/assets/index.html.b8ba1990.js"><link rel="prefetch" href="/assets/index.html.de4c440c.js"><link rel="prefetch" href="/assets/index.html.fe30c191.js"><link rel="prefetch" href="/assets/index.html.d86de717.js"><link rel="prefetch" href="/assets/index.html.40622452.js"><link rel="prefetch" href="/assets/index.html.4acfda8b.js"><link rel="prefetch" href="/assets/index.html.29221cf3.js"><link rel="prefetch" href="/assets/index.html.6e50d1b5.js"><link rel="prefetch" href="/assets/index.html.d4476e64.js"><link rel="prefetch" href="/assets/index.html.394c5717.js"><link rel="prefetch" href="/assets/index.html.af3e768e.js"><link rel="prefetch" href="/assets/index.html.d6282f12.js"><link rel="prefetch" href="/assets/index.html.c6cd15c4.js"><link rel="prefetch" href="/assets/index.html.dc379ed4.js"><link rel="prefetch" href="/assets/index.html.91c2e9b2.js"><link rel="prefetch" href="/assets/index.html.a81c43ce.js"><link rel="prefetch" href="/assets/index.html.6576d574.js"><link rel="prefetch" href="/assets/index.html.119095cf.js"><link rel="prefetch" href="/assets/index.html.468d5146.js"><link rel="prefetch" href="/assets/index.html.b57762aa.js"><link rel="prefetch" href="/assets/index.html.08b3a957.js"><link rel="prefetch" href="/assets/index.html.9cbf2d78.js"><link rel="prefetch" href="/assets/index.html.5527b99f.js"><link rel="prefetch" href="/assets/01-start.html.d562ffc2.js"><link rel="prefetch" href="/assets/02-注册路由.html.05087b52.js"><link rel="prefetch" href="/assets/04-mini-router.html.b8fc4d31.js"><link rel="prefetch" href="/assets/05-problem.html.fb19f33a.js"><link rel="prefetch" href="/assets/array-reactive.html.1db86fe8.js"><link rel="prefetch" href="/assets/async-component.html.05254f73.js"><link rel="prefetch" href="/assets/component-register.html.24943ade.js"><link rel="prefetch" href="/assets/extend-v-model.html.4583ef55.js"><link rel="prefetch" href="/assets/firstRender.html.26f5d482.js"><link rel="prefetch" href="/assets/init.html.546dd4a7.js"><link rel="prefetch" href="/assets/keep-alive.html.0bd03ca0.js"><link rel="prefetch" href="/assets/lifecycle.html.ebed6e47.js"><link rel="prefetch" href="/assets/merge-option.html.93bd52ea.js"><link rel="prefetch" href="/assets/mount.html.7f30ad9e.js"><link rel="prefetch" href="/assets/nexttick.html.ff93eb6e.js"><link rel="prefetch" href="/assets/patch.html.7477142c.js"><link rel="prefetch" href="/assets/reactive.html.98670804.js"><link rel="prefetch" href="/assets/render.html.a7dfe8ea.js"><link rel="prefetch" href="/assets/start.html.5bf57eaf.js"><link rel="prefetch" href="/assets/update.html.f4e0e520.js"><link rel="prefetch" href="/assets/virtualDom.html.612677be.js"><link rel="prefetch" href="/assets/watcher.html.6be452d8.js"><link rel="prefetch" href="/assets/start.html.b72fdfbd.js"><link rel="prefetch" href="/assets/api.html.ba87c34b.js"><link rel="prefetch" href="/assets/home.html.cbb9fbe6.js"><link rel="prefetch" href="/assets/plugin.html.e2c6dad6.js"><link rel="prefetch" href="/assets/theme.html.1046a602.js"><link rel="prefetch" href="/assets/404.html.f00f8da6.js"><link rel="prefetch" href="/assets/index.html.dc64fe92.js"><link rel="prefetch" href="/assets/index.html.47f0991d.js"><link rel="prefetch" href="/assets/index.html.10c11efd.js"><link rel="prefetch" href="/assets/index.html.b1c5ff9b.js"><link rel="prefetch" href="/assets/index.html.dc7e6a6a.js"><link rel="prefetch" href="/assets/index.html.6393ae3f.js"><link rel="prefetch" href="/assets/index.html.5dfafcda.js"><link rel="prefetch" href="/assets/index.html.482db2cb.js"><link rel="prefetch" href="/assets/index.html.b58e4194.js"><link rel="prefetch" href="/assets/index.html.6d0dbefb.js"><link rel="prefetch" href="/assets/index.html.8f70ec21.js"><link rel="prefetch" href="/assets/index.html.ef63142c.js"><link rel="prefetch" href="/assets/index.html.0462f77d.js"><link rel="prefetch" href="/assets/index.html.d055c163.js"><link rel="prefetch" href="/assets/index.html.1dc908c0.js"><link rel="prefetch" href="/assets/index.html.93836873.js"><link rel="prefetch" href="/assets/index.html.358ff904.js"><link rel="prefetch" href="/assets/index.html.53d25ed6.js"><link rel="prefetch" href="/assets/index.html.eb722408.js"><link rel="prefetch" href="/assets/index.html.5e579049.js"><link rel="prefetch" href="/assets/index.html.db31ec1c.js"><link rel="prefetch" href="/assets/index.html.6c0c426e.js"><link rel="prefetch" href="/assets/index.html.12efb372.js"><link rel="prefetch" href="/assets/index.html.0fb964e0.js"><link rel="prefetch" href="/assets/index.html.cb0d8e66.js"><link rel="prefetch" href="/assets/index.html.923ae6c5.js"><link rel="prefetch" href="/assets/index.html.25a58d92.js"><link rel="prefetch" href="/assets/index.html.6716644f.js"><link rel="prefetch" href="/assets/index.html.2a668384.js"><link rel="prefetch" href="/assets/reco-valine.ed4545b0.js">
+    <link rel="stylesheet" href="/assets/style.8e5b1768.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><div class="common-wrapper no-sidebar"><div><header class="navbar-container"><span class="nav-item site-brand"><a href="/" class=""><img class="logo" src="/logo.png" alt="Murphy&#39;s Blog"><span class="site-name can-hide">Murphy&#39;s Blog</span></a></span><div class="nav-item navbar-links-wrapper" style=""><form class="search-box" role="search"><input type="search" autocomplete="off" spellcheck="false" value><!----></form><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="主页"><!--[--><!--]--> 主页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/categories/vue2/1/" class="nav-link" aria-label="分类"><!--[--><!--]--> 分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/categories/vue3/1/" class="nav-link" aria-label="分类"><!--[--><!--]--> 分类 <!--[--><!--]--></a></div><!--]--></nav><a class="icon-container left btn-toggle-dark-mode" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:19px;height:19px;font-size:19px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"></path><path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0-2 2a2 2 0 0 0-2-2a2 2 0 0 0 2-2"></path><path d="M19 11h2m-1-1v2"></path></g></svg><!----></a><a class="icon-container left btn-toggle-menus" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:20px;height:20px;font-size:20px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="19" r="1"></circle><circle cx="12" cy="5" r="1"></circle></g></svg><!----></a></div></header><div class="mobile-menus-container"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="主页"><!--[--><!--]--> 主页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/categories/vue2/1/" class="nav-link" aria-label="分类"><!--[--><!--]--> 分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/categories/vue3/1/" class="nav-link" aria-label="分类"><!--[--><!--]--> 分类 <!--[--><!--]--></a></div><!--]--></nav><div class="appearance"><span>Appearance </span><a class="icon-container left btn-toggle-dark-mode" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:19px;height:19px;font-size:19px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"></path><path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0-2 2a2 2 0 0 0-2-2a2 2 0 0 0 2-2"></path><path d="M19 11h2m-1-1v2"></path></g></svg><!----></a></div></div><div class="sidebar-mask"></div><aside class="series-container"><!--[--><!--]--></aside><!--[--><main class="page-container show-catalog"><h1 class="page-title">component-create</h1><div class="page-info"><a class="icon-container left" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:18px;height:18px;font-size:18px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></g></svg><span style="color:inherit;font-size:14px;" class="icon-text"><!--[-->Murphy<!--]--></span></a><a class="icon-container left" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:18px;height:18px;font-size:18px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></g></svg><span style="color:inherit;font-size:14px;" class="icon-text"><!--[-->2023-05-18<!--]--></span></a><a class="icon-container left" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:18px;height:18px;font-size:18px;"><path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="color:inherit;font-size:14px;" class="icon-text"><!--[-->vue2<!--]--></span></a><a class="icon-container left" href="javascript:void(0)" target="_self"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:18px;height:18px;font-size:18px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="1" fill="currentColor"></circle><path d="M4 7v3.859c0 .537.213 1.052.593 1.432l8.116 8.116a2.025 2.025 0 0 0 2.864 0l4.834-4.834a2.025 2.025 0 0 0 0-2.864L12.29 4.593A2.025 2.025 0 0 0 10.859 4H7a3 3 0 0 0-3 3z"></path></g></svg><span style="color:inherit;font-size:14px;" class="icon-text"><!--[-->component-create<!--]--></span></a><!----></div><div class="theme-reco-default-content"><div><h1 id="组件创建" tabindex="-1"><a class="header-anchor" href="#组件创建" aria-hidden="true">#</a> 组件创建</h1><p>首先要强调的一点是：这里的组件创建不是创建组件的构造函数，创建组件的构造函数是在组件注册中完成的，而是创建组件<code>vnode</code>。</p><h2 id="开始创建组件的时机" tabindex="-1"><a class="header-anchor" href="#开始创建组件的时机" aria-hidden="true">#</a> 开始创建组件的时机</h2><p>当已经完成组件注册后，等到创建<code>vnode</code>时，执行<code>_createElement</code> 方法。</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">_createElement</span> <span class="token punctuation">(</span>
+  <span class="token parameter"><span class="token literal-property property">context</span><span class="token operator">:</span> Component<span class="token punctuation">,</span>
+  tag<span class="token operator">?</span><span class="token operator">:</span> string <span class="token operator">|</span> Class<span class="token operator">&lt;</span>Component<span class="token operator">&gt;</span> <span class="token operator">|</span> Function <span class="token operator">|</span> Object<span class="token punctuation">,</span>
+  data<span class="token operator">?</span><span class="token operator">:</span> VNodeData<span class="token punctuation">,</span>
+  children<span class="token operator">?</span><span class="token operator">:</span> any<span class="token punctuation">,</span>
+  normalizationType<span class="token operator">?</span><span class="token operator">:</span> number</span>
+<span class="token punctuation">)</span><span class="token operator">:</span> VNode <span class="token operator">|</span> Array<span class="token operator">&lt;</span>VNode<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token keyword">let</span> vnode<span class="token punctuation">,</span> ns
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> tag <span class="token operator">===</span> <span class="token string">&#39;string&#39;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> Ctor
+    ns <span class="token operator">=</span> <span class="token punctuation">(</span>context<span class="token punctuation">.</span>$vnode <span class="token operator">&amp;&amp;</span> context<span class="token punctuation">.</span>$vnode<span class="token punctuation">.</span>ns<span class="token punctuation">)</span> <span class="token operator">||</span> config<span class="token punctuation">.</span><span class="token function">getTagNamespace</span><span class="token punctuation">(</span>tag<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>config<span class="token punctuation">.</span><span class="token function">isReservedTag</span><span class="token punctuation">(</span>tag<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// platform built-in elements</span>
+      vnode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VNode</span><span class="token punctuation">(</span>
+        config<span class="token punctuation">.</span><span class="token function">parsePlatformTagName</span><span class="token punctuation">(</span>tag<span class="token punctuation">)</span><span class="token punctuation">,</span> data<span class="token punctuation">,</span> children<span class="token punctuation">,</span>
+        <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> context
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isDef</span><span class="token punctuation">(</span>Ctor <span class="token operator">=</span> <span class="token function">resolveAsset</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>$options<span class="token punctuation">,</span> <span class="token string">&#39;components&#39;</span><span class="token punctuation">,</span> tag<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// component</span>
+      vnode <span class="token operator">=</span> <span class="token function">createComponent</span><span class="token punctuation">(</span>Ctor<span class="token punctuation">,</span> data<span class="token punctuation">,</span> context<span class="token punctuation">,</span> children<span class="token punctuation">,</span> tag<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// unknown or unlisted namespaced elements</span>
+      <span class="token comment">// check at runtime because it may get assigned a namespace when its</span>
+      <span class="token comment">// parent normalizes children</span>
+      vnode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VNode</span><span class="token punctuation">(</span>
+        tag<span class="token punctuation">,</span> data<span class="token punctuation">,</span> children<span class="token punctuation">,</span>
+        <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> context
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// direct component options / constructor</span>
+    vnode <span class="token operator">=</span> <span class="token function">createComponent</span><span class="token punctuation">(</span>tag<span class="token punctuation">,</span> data<span class="token punctuation">,</span> context<span class="token punctuation">,</span> children<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+
+## createComponent
+通过<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">createComponent</span><span class="token template-punctuation string">`</span></span>则创建<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">vnode</span><span class="token template-punctuation string">`</span></span>，定义在<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">src/core/vdom/create-component.js</span><span class="token template-punctuation string">`</span></span>中，不过这部分代码比较复杂，所以只选择一些核心的部分进行分析。分为三个步骤：构造子类构造函数，安装组件钩子函数和实例化 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">vnode</span><span class="token template-punctuation string">`</span></span>。
+
+### 构造子类构造函数
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`js
+  <span class="token comment">// _base是Vue构造函数</span>
+  <span class="token keyword">const</span> baseCtor <span class="token operator">=</span> context<span class="token punctuation">.</span>$options<span class="token punctuation">.</span>_base
+
+  <span class="token comment">// plain options object: turn it into a constructor</span>
+  <span class="token comment">// 如果Ctor不是一个构造函数 而是一个选项对象</span>
+  <span class="token comment">// 通过Vue.extend来创建一个子组件的构造函数</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isObject</span><span class="token punctuation">(</span>Ctor<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Ctor <span class="token operator">=</span> baseCtor<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span>Ctor<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>我们在编写一个组件的时候，通常都是创建一个普通对象，还是以我们的 App.vue 为例，代码如下：</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> HelloWorld <span class="token keyword">from</span> <span class="token string">&#39;./components/HelloWorld&#39;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&#39;app&#39;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    HelloWorld
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个文件最终导出的是一个对象，所以会相对应地进入<code>Ctor = baseCtor.extend(Ctor)</code>的逻辑，注意为什么这里<code>context.$options._base</code>可以拿到Vue构造函数呢？因为在initGlobalAPI中有<code>Vue.options._base = Vue</code>。其次在<code>src/core/instance/init.js</code> 里 <code> _init</code> 函数中做了options的合并操作</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code>vm<span class="token punctuation">.</span>$options <span class="token operator">=</span> <span class="token function">mergeOptions</span><span class="token punctuation">(</span>
+  <span class="token function">resolveConstructorOptions</span><span class="token punctuation">(</span>vm<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  options <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  vm
+<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个操作把<code>Vue</code>上的一些<code>option</code>扩展到<code>vm.$options</code>，<code>vm.$options._base</code>可以拿到<code>Vue</code>构造函数。</p><p>再来看下<code>Vue.extend</code> 函数的定义，在 <code>src/core/global-api/extend.js</code> 中。</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token doc-comment comment">/**
+ * Class inheritance
+ */</span>
+Vue<span class="token punctuation">.</span><span class="token function-variable function">extend</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">extendOptions</span><span class="token operator">:</span> Object</span><span class="token punctuation">)</span><span class="token operator">:</span> Function <span class="token punctuation">{</span>
+  extendOptions <span class="token operator">=</span> extendOptions <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">const</span> Super <span class="token operator">=</span> <span class="token keyword">this</span>
+  <span class="token keyword">const</span> SuperId <span class="token operator">=</span> Super<span class="token punctuation">.</span>cid
+  <span class="token keyword">const</span> cachedCtors <span class="token operator">=</span> extendOptions<span class="token punctuation">.</span>_Ctor <span class="token operator">||</span> <span class="token punctuation">(</span>extendOptions<span class="token punctuation">.</span>_Ctor <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>cachedCtors<span class="token punctuation">[</span>SuperId<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> cachedCtors<span class="token punctuation">[</span>SuperId<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">const</span> name <span class="token operator">=</span> extendOptions<span class="token punctuation">.</span>name <span class="token operator">||</span> Super<span class="token punctuation">.</span>options<span class="token punctuation">.</span>name
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">&#39;production&#39;</span> <span class="token operator">&amp;&amp;</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">validateComponentName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">Sub</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">VueComponent</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_init</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token class-name">Sub</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token class-name">Super</span><span class="token punctuation">.</span>prototype<span class="token punctuation">)</span>
+  <span class="token class-name">Sub</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">=</span> Sub
+  Sub<span class="token punctuation">.</span>cid <span class="token operator">=</span> cid<span class="token operator">++</span>
+  Sub<span class="token punctuation">.</span>options <span class="token operator">=</span> <span class="token function">mergeOptions</span><span class="token punctuation">(</span>
+    Super<span class="token punctuation">.</span>options<span class="token punctuation">,</span>
+    extendOptions
+  <span class="token punctuation">)</span>
+  Sub<span class="token punctuation">[</span><span class="token string">&#39;super&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> Super
+
+  <span class="token comment">// For props and computed properties, we define the proxy getters on</span>
+  <span class="token comment">// the Vue instances at extension time, on the extended prototype. This</span>
+  <span class="token comment">// avoids Object.defineProperty calls for each instance created.</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Sub<span class="token punctuation">.</span>options<span class="token punctuation">.</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">initProps</span><span class="token punctuation">(</span>Sub<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Sub<span class="token punctuation">.</span>options<span class="token punctuation">.</span>computed<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">initComputed</span><span class="token punctuation">(</span>Sub<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// allow further extension/mixin/plugin usage</span>
+  Sub<span class="token punctuation">.</span>extend <span class="token operator">=</span> Super<span class="token punctuation">.</span>extend
+  Sub<span class="token punctuation">.</span>mixin <span class="token operator">=</span> Super<span class="token punctuation">.</span>mixin
+  Sub<span class="token punctuation">.</span>use <span class="token operator">=</span> Super<span class="token punctuation">.</span>use
+
+  <span class="token comment">// create asset registers, so extended classes</span>
+  <span class="token comment">// can have their private assets too.</span>
+  <span class="token constant">ASSET_TYPES</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Sub<span class="token punctuation">[</span>type<span class="token punctuation">]</span> <span class="token operator">=</span> Super<span class="token punctuation">[</span>type<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment">// enable recursive self-lookup</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Sub<span class="token punctuation">.</span>options<span class="token punctuation">.</span>components<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> Sub
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// keep a reference to the super options at extension time.</span>
+  <span class="token comment">// later at instantiation we can check if Super&#39;s options have</span>
+  <span class="token comment">// been updated.</span>
+  Sub<span class="token punctuation">.</span>superOptions <span class="token operator">=</span> Super<span class="token punctuation">.</span>options
+  Sub<span class="token punctuation">.</span>extendOptions <span class="token operator">=</span> extendOptions
+  Sub<span class="token punctuation">.</span>sealedOptions <span class="token operator">=</span> <span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> Sub<span class="token punctuation">.</span>options<span class="token punctuation">)</span>
+
+  <span class="token comment">// cache constructor</span>
+  cachedCtors<span class="token punctuation">[</span>SuperId<span class="token punctuation">]</span> <span class="token operator">=</span> Sub
+  <span class="token keyword">return</span> Sub
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>Vue.extend</code> 的作用就是通过原型继承的方式构造一个 <code>Vue</code> 的子类<code>Sub</code>，并且对<code>Sub</code>扩展了一些属性，比如<code>options</code>，添加全局<code>API</code>等，并且对配置中的 props 和 <code>computed</code>做了初始化工作；最后对于这个 <code>Sub</code> 构造函数做了缓存，避免多次执行 <code>Vue.extend</code> 的时候对同一个子组件重复构造。这样当我们去实例化 Sub 的时候，就会执行 <code>this._init</code> 逻辑再次走到了 <code>Vue</code> 实例的初始化逻辑，实例化子组件的逻辑在之后的章节会介绍，在<code>patch</code>一节中也有介绍子组件实例化的入口。</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">Sub</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">VueComponent</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_init</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="安装组件钩子函数" tabindex="-1"><a class="header-anchor" href="#安装组件钩子函数" aria-hidden="true">#</a> 安装组件钩子函数</h3><p>在初始化一个 Component 类型的 VNode 的过程中实现了几个钩子函数</p><div class="language-JS ext-JS line-numbers-mode"><pre class="language-JS"><code>const componentVNodeHooks = {
+  init (vnode: VNodeWithData, hydrating: boolean): ?boolean {
+    if (
+      vnode.componentInstance &amp;&amp;
+      !vnode.componentInstance._isDestroyed &amp;&amp;
+      vnode.data.keepAlive
+    ) {
+      // kept-alive components, treat as a patch
+      const mountedNode: any = vnode // work around flow
+      componentVNodeHooks.prepatch(mountedNode, mountedNode)
+    } else {
+      const child = vnode.componentInstance = createComponentInstanceForVnode(
+        vnode,
+        activeInstance
+      )
+      child.$mount(hydrating ? vnode.elm : undefined, hydrating)
+    }
+  },
+
+  prepatch (oldVnode: MountedComponentVNode, vnode: MountedComponentVNode) {
+    const options = vnode.componentOptions
+    const child = vnode.componentInstance = oldVnode.componentInstance
+    updateChildComponent(
+      child,
+      options.propsData, // updated props
+      options.listeners, // updated listeners
+      vnode, // new parent vnode
+      options.children // new children
+    )
+  },
+
+  insert (vnode: MountedComponentVNode) {
+    const { context, componentInstance } = vnode
+    if (!componentInstance._isMounted) {
+      componentInstance._isMounted = true
+      callHook(componentInstance, &#39;mounted&#39;)
+    }
+    if (vnode.data.keepAlive) {
+      if (context._isMounted) {
+        // vue-router#1212
+        // During updates, a kept-alive component&#39;s child components may
+        // change, so directly walking the tree here may call activated hooks
+        // on incorrect children. Instead we push them into a queue which will
+        // be processed after the whole patch process ended.
+        queueActivatedComponent(componentInstance)
+      } else {
+        activateChildComponent(componentInstance, true /* direct */)
+      }
+    }
+  },
+
+  destroy (vnode: MountedComponentVNode) {
+    const { componentInstance } = vnode
+    if (!componentInstance._isDestroyed) {
+      if (!vnode.data.keepAlive) {
+        componentInstance.$destroy()
+      } else {
+        deactivateChildComponent(componentInstance, true /* direct */)
+      }
+    }
+  }
+}
+
+const hooksToMerge = Object.keys(componentVNodeHooks)
+
+function installComponentHooks (data: VNodeData) {
+  const hooks = data.hook || (data.hook = {})
+  for (let i = 0; i &lt; hooksToMerge.length; i++) {
+    const key = hooksToMerge[i]
+    const existing = hooks[key]
+    const toMerge = componentVNodeHooks[key]
+    if (existing !== toMerge &amp;&amp; !(existing &amp;&amp; existing._merged)) {
+      hooks[key] = existing ? mergeHook(toMerge, existing) : toMerge
+    }
+  }
+}
+
+function mergeHook (f1: any, f2: any): Function {
+  const merged = (a, b) =&gt; {
+    // flow complains about extra args which is why we use any
+    f1(a, b)
+    f2(a, b)
+  }
+  merged._merged = true
+  return merged
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>整个 installComponentHooks 的过程就是把 componentVNodeHooks 的钩子函数合并到 data.hook 中，在 VNode 执行 patch 的过程中执行相关的钩子函数，具体的执行我们稍后在介绍 patch 过程中会详细介绍。这里要注意的是合并策略，在合并过程中，如果某个时机的钩子已经存在 data.hook 中，那么通过执行 mergeHook 函数做合并，这个逻辑很简单，就是在最终执行的时候，依次执行这两个钩子函数即可。</p><h3 id="实例化-vnode" tabindex="-1"><a class="header-anchor" href="#实例化-vnode" aria-hidden="true">#</a> 实例化 VNode</h3><div class="language-JS ext-JS line-numbers-mode"><pre class="language-JS"><code>const name = Ctor.options.name || tag
+const vnode = new VNode(
+  `vue-component-${Ctor.cid}${name ? `-${name}` : &#39;&#39;}`,
+  data, undefined, undefined, undefined, context,
+  { Ctor, propsData, listeners, tag, children },
+  asyncFactory
+)
+return vnode
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>最后一步非常简单，通过 new VNode 实例化一个 vnode 并返回。需要注意的是和普通元素节点的 vnode 不同，组件的 vnode 是没有 children 的，这点很关键，在之后的 patch 过程中我们会再提。</p></div></div><footer class="page-meta"><div class="meta-item edit-link"><a class="icon-container left meta-item-label" href="https://github.com/vuepress-reco/vuepress-theme-reco-next/edit/main/example/blogs/vue2/component-create.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" style="color:inherit;width:20px;height:20px;font-size:20px;"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-3"></path><path d="M9 15h3l8.5-8.5a1.5 1.5 0 0 0-3-3L9 12v3"></path><path d="M16 5l3 3"></path></g></svg><span style="color:inherit;font-size:14px;" class="icon-text"><!--[-->Edit this page<!--]--></span></a></div><!----></footer><!----><!----></main><!--]--><div class="page-catalog-container"><h5 class="tip">ON THIS PAGE</h5><ul><!--[--><!--[--><li class="page-catalog-menu-depth_2"><a aria-current="page" href="/blogs/vue2/component-create.html#开始创建组件的时机" class="router-link-active router-link-exact-active nav-link page-catalog-item" aria-label="开始创建组件的时机"><!--[--><!--]--> 开始创建组件的时机 <!--[--><!--]--></a></li><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/vue2/component-create.html#安装组件钩子函数" class="router-link-active router-link-exact-active nav-link page-catalog-item" aria-label="安装组件钩子函数"><!--[--><!--]--> 安装组件钩子函数 <!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/vue2/component-create.html#实例化-vnode" class="router-link-active router-link-exact-active nav-link page-catalog-item" aria-label="实例化 VNode"><!--[--><!--]--> 实例化 VNode <!--[--><!--]--></a></li><!--]--><!--]--><!--]--></ul></div></div></div></div><!----><!----><!--]--></div>
+    <script type="module" src="/assets/app.fbeace38.js" defer></script>
+  </body>
+</html>

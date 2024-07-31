@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7db00580","path":"/tags/nexttick/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};

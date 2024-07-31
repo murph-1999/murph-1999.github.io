@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-be4d8340","path":"/blogs/vue2/array-reactive.html","title":"array-reactive","lang":"en-US","frontmatter":{"title":"array-reactive","date":"2023/03/01","tags":["array-reactive"],"categories":["vue2"]},"excerpt":"","headers":[],"git":{},"filePathRelative":"blogs/vue2/array-reactive.md"}');export{e as data};

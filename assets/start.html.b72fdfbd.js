@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,d as c}from"./app.fbeace38.js";const o={},_=c("p",null,"TODO",-1),n=[_];function r(a,l){return t(),s("div",null,n)}const f=e(o,[["render",r],["__file","start.html.vue"]]);export{f as default};
