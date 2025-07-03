@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.Q0X2mdF-.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"basic/js/eventLoop.md","filePath":"basic/js/eventLoop.md","lastUpdated":null}'),o={name:"basic/js/eventLoop.md"};function s(n,c,r,p,i,d){return t(),a("div")}const m=e(o,[["render",s]]);export{l as __pageData,m as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.Q0X2mdF-.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"basic/js/函数式编程.md","filePath":"basic/js/函数式编程.md","lastUpdated":null}'),s={name:"basic/js/函数式编程.md"};function c(r,o,n,_,i,d){return t(),a("div")}const m=e(s,[["render",c]]);export{l as __pageData,m as default};

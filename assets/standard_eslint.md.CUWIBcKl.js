@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./chunks/framework.Q0X2mdF-.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"standard/eslint.md","filePath":"standard/eslint.md","lastUpdated":null}'),s={name:"standard/eslint.md"};function n(r,d,o,c,i,l){return e(),a("div")}const m=t(s,[["render",n]]);export{_ as __pageData,m as default};
